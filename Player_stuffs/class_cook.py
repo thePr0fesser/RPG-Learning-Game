@@ -1,4 +1,4 @@
-"""import player
+"""import player 1
 import random
 
 
