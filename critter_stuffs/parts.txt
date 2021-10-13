@@ -1,0 +1,17 @@
+TEETH,2,0,0,0,0,2,sanguine_teeth
+HORNS,1,0,1,0,0,1,mega_horn
+CLAWS,1,0,0,0,1,0,rip_n_tear
+ACID_SPIT,1,0,0,1,0,4,acid_rain
+POUNCE,2,0,0,0,0,2,standard_special
+HOOVED_FEET,0,0,0,0,2,0,basic_special
+TAIL,0,2,0,1,1,0,basic_special
+SPOTS,0,3,1,0,0,0,basic_special
+QUILLS,0,2,2,0,0,0,counter_attack
+PAWS,1,0,0,0,1,0,basic_special
+TWO_FEETS,2,0,1,0,0,0,basic_special
+STRIPES,0,3,1,0,0,0,basic_special
+WHISKERS,0,0,0,4,0,0,basic_special
+ANETENNA,0,0,0,2,1,0,basic_special
+BUG_EYES,0,0,0,1,2,0,basic_special
+WINGS,0,0,0,0,4,0,basic_special
+POINTY_EARS,0,0,0,3,1,0,basic_special

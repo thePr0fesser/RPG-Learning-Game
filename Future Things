@@ -1,0 +1,85 @@
+""""
+Stat synopsis:
+Strength - the character's raw physical power. This determines how much damage they do when they hit things. It also deteremines how much they can carry and how intimidating they are. This along with dex determines a character's ability to not get hit by things that are physical. This is the Warrior's main attribute and it helps them hit things more than once per round.
+
+Luck - this is how much RNGesus likes the character. Luck determines the character's crit chance and everything else involved with randomness, including finding gold and items after battle. This is the Gambler's main attribute and it will help them getting extra lucky with dealing more critical hit damage.
+
+Dexterity - this is how nimble and precise the character is. Dex determines the chance of hitting things. It also helps determine the damage with bows and thrown weapons. This alonge with strength determines a character's ability to not get hit by things that are physical. This is the Thief's main attribute and it helps them be able to dodge out of the way of attacks that would otherwise hit.
+
+Constitution - this is how much of a beating a character can take. Constitution determines the characters hit points and their ability to not get hit by special attacks. Everyone needs good constition if they plan of making it anywhere in the world of Kerradin (I don't know just came up with it)
+
+Class Abilities:
+Warrior
+Warriors are all about dealing damage, no fluff or flair. And they are good at it. At level 1 they have a chance of attacking more than once per turn. They more of a chance as they get stronger.
+
+At level 3 Warriors are able to Reposte, on their turn they able to take a defensive stance and get ready to be attacked, and if they are they deflect the damage and strike back, always resulting in a critical hit
+
+At level 6 Warriors are able to stun their opponents with the pommel of their swords. This attack doesn't hit very hard but leaves the opponent stunned and unable to attack for 1-3 rounds.
+
+At level 9 Warriors become the pinnacle of strength and combat prowess. They will always strike twice per round, and their multi hit gives them a chance of attacking 3 times
+
+Thief
+Thieves are about subtrafuge and being quick and skillful. At level 1 thieves get a chance of being able to dodge out of the way of an attack at the last possible moment. They get a higher chance of dodging as they get more dexterous
+
+At level 3 Thieves, if they go first, get the chance to do 
+"""
+
+
+
+""""
+def thief_dodge():
+  temp_var2 = random.randint(1,100)
+  if person.personclass == "thief":
+    if temp_var2 >= 100 - (round(new_person.dex//2)):
+      print("Thief deftly dodges the attack")
+      person.dmg_taken - person.dmg_taken
+      return dmg_taken
+    else:
+      print("Thief tried to dodge but failed!")
+      return
+  else:
+    return
+"""
+  
+"""like....
+  def take_damage(self):
+    if self.personclass == "thief":
+      return self.thief_dodge()
+    else:
+      blah blah blah"""
+
+      
+"""
+warrior has the chance to attack more than once on his turn. Note limit it to one extra hit, needs to be run in hit/crit section of do_dmg 
+  def warrior_multihit
+    temp_var2 = random.randint(1,100)
+    if new_person.personclass == warrior
+      if temp_var2 >= 100 - (person_stren//2):
+        do_dmg()
+      else:
+        return
+    else:
+      return 
+
+thief has a chance of not taking damage on a hit? needs to be run in critter attack protocal
+  def thief_dodge
+    temp_var2 = random.randint(1,100)
+      if new_person.personclass == thief
+        if temp_var2 >= 100 - (person_dex//2)
+          then ignore damage
+        else:
+          return
+      else:
+        return
+
+gambler has a chance of doubling crit damage? needs to be run in crit section of do_dmg
+  def gambler_luckycut
+    temp_var2 = random.randint(1,100)
+      if new_person.personclass == gambler
+        if temp_var2 >= 100 - (person_luck//2)
+          2 * crit damage
+        else:
+          return
+      else:
+        return
+"""             
