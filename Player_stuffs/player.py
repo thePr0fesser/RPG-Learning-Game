@@ -151,6 +151,8 @@ class everyone:
     for x in self.statusEffects:
       if x.on_attack == True:
         my_attack_effects.append(x)
+      else:
+        pass
       
     for x in my_attack_effects:
       if x.self_target == True:

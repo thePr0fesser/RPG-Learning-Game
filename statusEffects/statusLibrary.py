@@ -42,11 +42,28 @@ class rogue_dodge(statusEffects):
   def effects(self,target):
     rd_roll = random.randint(1,100)
     if rd_roll >= 100 - (target.dex):
-      print("I activated")
-      myvar = 0
       return 0
     else:
       return 0
+
+
+class gambler_mth(statusEffects):
+  def __init__(self):
+    super().__init__()
+    self.passive = True
+    self.on_attack = True
+    self.self_target = True
+    self.autohit = 0
+  
+  def effects(self, target):
+    mth_roll = random.randint(1,100)
+    if mth_roll >= 100 - (target.luck):
+      print("I activated")
+      self.autohit == 1
+      return target.do_dmg()
+    else:
+      return
+
 
 
 class Burn(statusEffects):
