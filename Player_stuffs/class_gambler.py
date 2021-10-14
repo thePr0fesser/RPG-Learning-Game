@@ -1,8 +1,9 @@
-"""from player import everyone
+from Player_stuffs import player
 import random
+from statusEffects import statusLibrary
 
 
-class gambler(everyone):
+class gambler(player.everyone):
   def __init__(self,inventory,name):
     super().__init__(inventory)
     
@@ -14,13 +15,5 @@ class gambler(everyone):
     self.dex = 15
     self.con = 10
     self.hp = (5 + self.con)
+    self.statusEffects = [statusLibrary.gambler_mth()]
     #self.def = (self.stren + self.dex)
-
-  def misstohit(self, target_critter):
-    mth_chance = random.randint(1,100)
-    if mth_chance >= 100 - (self.luck):
-      print("{0} turned the Missed attack into a hit!".format(self.name))
-      self.autohit = 1
-      return self.do_dmg(target_critter)
-    else:
-      return 0"""

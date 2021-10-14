@@ -8,6 +8,7 @@ from GUI_Core import test_gui
 from Player_stuffs import skill
 from Battlemenu import battlemenu
 from Player_stuffs import class_warrior
+from Player_stuffs import class_gambler
 from Player_stuffs import class_rogue
 
 """import battleloop
@@ -84,9 +85,9 @@ elif user_input == "4":
   print(my_skill.activate(new_person, critter1))
 
 elif user_input == "5":
-  inventory = [items.sword(items.weaponmat["ironsword"])]
-  inventory.append(items.armor(items.armormat["mail"]))
-  new_person = class_warrior.warrior(inventory, 'Jacob')
+  inventory = [items.sword(items.weaponmat["playingcard"])]
+  inventory.append(items.armor(items.armormat["gamclothes"]))
+  new_person = class_gambler.gambler(inventory, 'Jacob')
   new_person.update_stats()
 
   inventory = [items.sword(items.weaponmat["ironsword"])]
